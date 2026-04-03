@@ -139,6 +139,11 @@ function initReveal() {
             if (seen.has(el)) return;
             if (el.closest('nav') || el.closest('footer')) return;
             if (el.classList.contains('char-line') || el.closest('.char-line')) return;
+            if (el.closest('#jumbotron') && el.classList.contains('a-button')) return;
+
+            if (el.closest('.p-r-2-card') && !el.classList.contains('p-r-2-card')) return;
+            
+            if (el.closest('.t-slide') && !el.classList.contains('t-slide')) return;
 
             seen.add(el);
             el.classList.add('sr');

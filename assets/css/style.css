@@ -92,7 +92,7 @@ nav ul li.nav-dropdown {
     top: calc(100% + 16px);
     left: 50%;
     transform: translateX(-50%) translateY(-8px);
-    background: #48498e;
+    background: #26287d;
     padding: 8px;
     min-width: 220px;
     display: flex;
@@ -161,7 +161,7 @@ nav ul li.nav-dropdown {
     top: 16px;
     left: 16px;
     width: 335px;
-    background: #48498e;
+    background: #26287d;
     z-index: 1000;
     padding: 20px;
     transform: translateY(-20px);
@@ -292,7 +292,7 @@ nav ul li.nav-dropdown {
 .mobile-menu-kontak {
     display: block;
     background: white;
-    color: #48498e;
+    color: #26287d;
     text-decoration: none;
     font-weight: 700;
     font-size: 13px;
@@ -401,7 +401,7 @@ nav ul li.nav-dropdown {
 #pengantar {
     width: calc(100vw - 60px);
     height: fit-content;
-    background-color: #48498e;
+    background-color: #26287d;
     padding: 30px;
     padding-top: 90px;
     padding-bottom: 90px;
@@ -528,7 +528,7 @@ nav ul li.nav-dropdown {
     width: 28px;
     height: 28px;
     border-radius: 50%;
-    background-color: #48498e;
+    background-color: #26287d;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -589,7 +589,7 @@ nav ul li.nav-dropdown {
     margin-top: auto;
     height: fit-content;
     border: 1px solid white;
-    background-color: #48498e;
+    background-color: #26287d;
     color: white;
 }
 
@@ -679,8 +679,8 @@ nav ul li.nav-dropdown {
 }
 
 #prodi .p-r-2 .p-r-2-card:hover .kaprodi .kaprodi-right {
-    background-color: #c8c9ff;
-    border: 1px solid #c8c9ff;
+    background-color: #e5e6ff;
+    border: 1px solid #e5e6ff;
 }
 
 #prodi .p-r-2 .p-r-2-card:hover .img-container img {
@@ -692,7 +692,7 @@ nav ul li.nav-dropdown {
 }
 
 #prodi .p-r-1 .p-r-1-right a .btn-arrow-wrap svg path {
-    stroke: #48498e;
+    stroke: #26287d;
 }
 
 #nilai-nilai {
@@ -876,9 +876,9 @@ nav ul li.nav-dropdown {
 
 #testimoni .t-arrow:hover,
 #testimoni .t-arrow.t-arrow-filled {
-    background: #48498e;
+    background: #26287d;
     color: white;
-    border-color: #48498e;
+    border-color: #26287d;
 }
 
 #testimoni .t-right {
@@ -908,7 +908,7 @@ nav ul li.nav-dropdown {
 #testimoni .t-title {
     font-size: 14px;
     font-weight: 600;
-    color: #48498e;
+    color: #26287d;
     margin: 0;
     letter-spacing: 0.02em;
 }
@@ -1023,7 +1023,7 @@ footer .f-newsletter-form button {
 }
 
 footer .f-newsletter-form button:hover {
-    background: #48498e;
+    background: #26287d;
 }
 
 footer .f-col-2 {
@@ -1124,43 +1124,39 @@ footer .f-socials a:hover {
 }
 
 
-/* ======================
-   RESPONSIVE
-   ====================== */
-
 @media (max-width: 768px) {
-
+ 
     nav {
         padding: 16px 20px;
         width: calc(100% - 40px);
     }
-
+ 
     nav img {
         height: 44px;
     }
-
+ 
     nav .nav-links {
         display: none;
     }
-
+ 
     nav .nav-kontak {
         display: none;
     }
-
+ 
     .nav-hamburger {
         display: flex;
     }
-
+ 
     #jumbotron {
         height: 100svh;
     }
-    
+ 
     #jumbotron .bg-jumbotron .bg-layer .content-jumbotron {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
     }
-
+ 
     #jumbotron .bg-jumbotron .bg-layer .content-jumbotron .hero-1 {
         grid-template-columns: 1fr;
         height: auto;
@@ -1169,258 +1165,282 @@ footer .f-socials a:hover {
         gap: 24px;
         align-items: start;
     }
-
+ 
     #jumbotron .bg-jumbotron .bg-layer .content-jumbotron .hero-1 div:nth-child(1) {
         font-size: 40px;
     }
-
+ 
     #jumbotron .bg-jumbotron .bg-layer .content-jumbotron .hero-1 div:nth-child(2) {
         width: 100%;
         font-size: 16px;
         padding-bottom: 0;
     }
-
+ 
     #jumbotron .bg-jumbotron .bg-layer .content-jumbotron .hero-2 {
         font-size: 72px;
         line-height: 60px;
         margin-top: 40px;
     }
-
+ 
     .marquee {
         height: 100px;
     }
-
+ 
     #pengantar {
         width: calc(100vw - 40px);
         padding: 20px;
         padding-top: 60px;
         padding-bottom: 60px;
     }
-
+ 
     #pengantar .p-r-1 {
         grid-template-columns: 1fr;
         gap: 40px;
     }
-
+ 
     #pengantar .p-r-1 .p-c-1 {
         width: 100%;
         gap: 30px;
     }
-
+ 
     #pengantar .p-r-1 .p-c-1 .p-c-1-img-container {
         height: 60vw;
     }
-
+ 
     #pengantar .p-r-1 .p-c-1 .p-c-1-text-container {
         flex-direction: column;
         gap: 20px;
     }
-
+ 
     #pengantar .p-r-1 .p-c-1 .p-c-1-text-container h2 {
         font-size: 40px;
     }
-
+ 
     #pengantar .p-r-1 .p-c-1 .p-c-1-text-container h3 {
         font-size: 18px;
     }
-
+ 
     #pengantar .p-r-1 .p-c-1 .p-c-1-text-container p {
         font-size: 16px;
     }
-
+ 
     #pengantar .p-r-1 .p-c-2 h2 {
         font-size: 26px;
     }
-
+ 
     #pengantar .p-r-1 .p-c-2 p {
         font-size: 16px;
         margin-bottom: 30px;
     }
-
+ 
     #pengantar .p-r-1 .p-c-2 .p-c-2-img-container {
         height: 60vw;
     }
-
+ 
     #prodi {
         width: calc(100vw - 40px);
         padding: 20px;
         padding-top: 60px;
         padding-bottom: 60px;
     }
-
+ 
     #prodi .p-r-1 {
         grid-template-columns: 1fr;
         gap: 16px;
         margin-bottom: 20px;
     }
-
+ 
     #prodi .p-r-1 .p-r-1-left h2 {
         font-size: 22px;
         margin-top: 12px;
     }
-
+ 
     #prodi .p-r-1 .p-r-1-right {
         justify-content: flex-start;
     }
-
+ 
     #prodi .p-r-1 .p-r-1-right a {
         margin-left: 0;
         margin-top: 0;
     }
-
+ 
     #prodi .p-r-2 {
         grid-template-columns: 1fr;
         gap: 20px;
         padding-top: 20px;
     }
-
+ 
     #prodi .p-r-2 .p-r-2-card .img-container {
         height: 220px;
     }
-
+ 
+    #prodi .p-r-2 .p-r-2-card .text-container p:nth-child(1) {
+        font-size: 18px;
+    }
+ 
+    #prodi .p-r-2 .p-r-2-card .text-container p:nth-child(2) {
+        font-size: 15px;
+    }
+ 
+    #prodi .p-r-2 .p-r-2-card .kaprodi .kaprodi-left div p {
+        font-size: 13px;
+    }
+ 
+    #prodi .p-r-2 .p-r-2-card .kaprodi .kaprodi-left div p:nth-child(2) {
+        font-size: 12px;
+    }
+ 
     #nilai-nilai {
         grid-template-columns: 1fr;
     }
-
+ 
     #nilai-nilai .n-n-1 {
         height: auto;
         padding: 20px;
         padding-top: 60px;
         padding-bottom: 30px;
     }
-
+ 
     #nilai-nilai .n-n-1-left .img-container {
         height: 200px;
     }
-
+ 
     #nilai-nilai .n-n-1-right .img-container:nth-child(1) {
         height: 180px;
     }
-
+ 
     #nilai-nilai .n-n-1-right .img-container:nth-child(2) {
         height: 130px;
     }
-
+ 
     #nilai-nilai .n-n-2 {
         padding: 20px;
         padding-top: 30px;
         padding-bottom: 60px;
         padding-left: 20px;
     }
-
+ 
     #nilai-nilai .n-n-2 h2 {
         font-size: 26px;
     }
-
+ 
     #nilai-nilai .n-n-2 p {
         font-size: 16px;
     }
-
+ 
     #nilai-nilai .n-n-2 li {
         font-size: 16px;
     }
-
+ 
     #testimoni {
         width: calc(100vw - 40px);
         padding: 20px;
         padding-top: 60px;
         padding-bottom: 60px;
     }
-
+ 
     #testimoni .t-r-1 {
         grid-template-columns: 1fr;
         gap: 40px;
     }
-
+ 
     #testimoni .t-left {
         border-right: none;
         border-bottom: 1px solid rgba(0, 0, 0, 0.131);
         padding-right: 0;
         padding-bottom: 30px;
     }
-
+ 
     #testimoni .t-left h2 {
         font-size: 26px;
     }
-
+ 
     #testimoni .t-right {
         padding-left: 0;
     }
-
+ 
     #testimoni .t-quote {
         font-size: 16px;
     }
-
+ 
     #testimoni .t-arrows {
         margin-top: 24px;
     }
-
+ 
     footer {
         width: calc(100vw - 40px);
         padding: 20px;
         padding-top: 60px;
     }
-
+ 
     footer .f-top {
         grid-template-columns: 1fr;
         gap: 40px;
         padding-bottom: 40px;
     }
-
+ 
     footer .f-col-2 {
         display: none;
     }
-
+ 
     footer .f-tagline {
         font-size: 15px;
         margin-bottom: 24px;
         max-width: 100%;
     }
-
+ 
     footer .f-bottom {
         flex-direction: column;
         align-items: flex-start;
         gap: 16px;
     }
 }
-
+ 
 @media (min-width: 769px) and (max-width: 1024px) {
-
+ 
     #jumbotron .bg-jumbotron .bg-layer .content-jumbotron .hero-1 div:nth-child(1) {
         font-size: 48px;
     }
-
+ 
     #jumbotron .bg-jumbotron .bg-layer .content-jumbotron .hero-2 {
         font-size: 110px;
         line-height: 90px;
     }
-
+ 
     #pengantar .p-r-1 .p-c-1 .p-c-1-text-container h2 {
         font-size: 48px;
     }
-
+ 
     #prodi .p-r-2 {
         grid-template-columns: 1fr 1fr;
     }
-
+ 
+    #prodi .p-r-2 .p-r-2-card .text-container p:nth-child(1) {
+        font-size: 20px;
+    }
+ 
+    #prodi .p-r-2 .p-r-2-card .text-container p:nth-child(2) {
+        font-size: 16px;
+    }
+ 
     #nilai-nilai {
         grid-template-columns: 1fr;
     }
-
+ 
     #nilai-nilai .n-n-1 {
         height: auto;
         padding-bottom: 30px;
     }
-
+ 
     #nilai-nilai .n-n-2 {
         padding-left: 30px;
         padding-top: 30px;
     }
-
+ 
     footer .f-top {
         grid-template-columns: 1fr 1fr;
     }
-
+ 
     footer .f-col-2 {
         display: none;
     }
