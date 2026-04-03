@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FST Upitra</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <nav>
+        <img src="assets/img/logo-header.png" alt="">
+        <ul class="nav-links">
+            <li>Beranda</li>
+            <li>Profil</li>
+            <li class="nav-dropdown">
+                Program Studi
+                <span class="nav-chevron">
+                    <svg viewBox="0 0 16 16" fill="none">
+                        <path d="M4 6l4 4 4-4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </span>
+                <div class="nav-dropdown-menu">
+                    <a href="">Sistem Informasi</a>
+                    <a href="">Informatika</a>
+                    <a href="">Rekayasa Perangkat Lunak</a>
+                </div>
+            </li>
+            <li>Kontak</li>
+        </ul>
+        <a href="tel:+628112907500" class="kontak nav-kontak">+62 (8112 9075 00)</a>
+        <button class="nav-hamburger" id="navHamburger" aria-label="Open menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </nav>
+
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="mobile-menu-header">
+            <img src="assets/img/logo-header.png" alt="" class="mobile-menu-logo">
+            <button class="mobile-menu-close" id="mobileMenuClose" aria-label="Close menu">
+                <svg viewBox="0 0 24 24" fill="none" width="20" height="20">
+                    <path d="M6 6l12 12M6 18L18 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+            </button>
+        </div>
+        <ul class="mobile-menu-links">
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">PROFIL</a></li>
+            <li class="mobile-dropdown">
+                <button class="mobile-dropdown-btn" id="mobileDropdownBtn">
+                    PROGRAM STUDI
+                    <svg viewBox="0 0 16 16" fill="none" width="14" height="14" class="mobile-chevron">
+                        <path d="M4 6l4 4 4-4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+                <ul class="mobile-submenu" id="mobileSubmenu">
+                    <li><a href="#">Sistem Informasi</a></li>
+                    <li><a href="#">Informatika</a></li>
+                    <li><a href="#">Rekayasa Perangkat Lunak</a></li>
+                </ul>
+            </li>
+            <li><a href="#">KONTAK</a></li>
+        </ul>
+        <a href="tel:+628112907500" class="mobile-menu-kontak">+62 (8112 9075 00)</a>
+    </div>
+
+    <div class="mobile-menu-overlay" id="mobileMenuOverlay"></div>
+
+    <main>
+        <section id="jumbotron">
+            <div class="bg-jumbotron">
+                <div class="bg-layer">
+                    <div class="content-jumbotron">
+                        <div class="hero-1">
+                            <div>
+                                Fakultas <br>
+                                Sains dan <br>
+                                Teknologi
+                            </div>
+                            <div>
+                                Lulusan kami berkarir di bidang yang sesuai dengan keahlian dan tujuan mereka.
+                                <br>
+                                <a href="#pengantar" class="a-button">
+                                    <span class="btn-arrow-wrap">
+                                        <svg class="arrow-main" viewBox="0 0 16 16" fill="none">
+                                            <path d="M3 8h10M9 4l4 4-4 4" stroke="white" stroke-width="1.8"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                        <svg class="arrow-ghost" viewBox="0 0 16 16" fill="none">
+                                            <path d="M3 8h10M9 4l4 4-4 4" stroke="white" stroke-width="1.8"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </span>
+                                    Selengkapnya
+                                </a>
+                            </div>
+                        </div>
+                        <div class="hero-2">
+                            <div class="marquee">
+                                <div class="track">
+                                    <div class="content">&nbsp;Pendidikan Berkualitas untuk Masa Depan yang Lebih Cerah
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="pengantar">
+            <div class="p-r-1">
+                <div class="p-c-1">
+                    <div class="p-c-1-img-container">
+                        <img src="assets/img/upitra4.jpg" alt="">
+                    </div>
+                    <div class="p-c-1-text-container">
+                        <div>
+                            <h2 class="char-line" data-text="10+">10+</h2>
+                            <h3>Prospek Karir</h3>
+                            <p>
+                                Project Manager, Web Programmer, IT Consultant, dan masih banyak lagi
+                            </p>
+                        </div>
+                        <div>
+                            <h2 class="char-line" data-text="3">3</h2>
+                            <h3>Program Studi</h3>
+                            <p>
+                                Sistem Informasi, Informatika, Rekayasa Perangkat Lunak
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-c-2">
+                    <div>
+                        Since 2022
+                    </div>
+                    <h2>
+                        Menghasilkan lulusan yang tidak hanya cerdas, tetapi juga berkarakter.
+                    </h2>
+                    <p>
+                        Didirikan pada 2022, FST Upitra hadir sebagai fakultas baru yang transformatif dalam bidang
+                        Informatika, Sistem Informasi, dan Rekayasa Perangkat Lunak di bawah naungan Universitas
+                        Pignatelli Triputra.
+                    </p>
+                    <div class="p-c-2-img-container">
+                        <img src="assets/img/upitra3.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="prodi">
+            <div class="rounded">PROGRAM STUDI</div>
+            <div class="p-r-1">
+                <div class="p-r-1-left">
+                    <h2>Kami menyediakan tiga program studi unggulan di bidang sains dan teknologi</h2>
+                </div>
+                <div class="p-r-1-right">
+                    <a href="#pengantar" class="a-button">
+                        <span class="btn-arrow-wrap">
+                            <svg class="arrow-main" viewBox="0 0 16 16" fill="none">
+                                <path d="M3 8h10M9 4l4 4-4 4" stroke="white" stroke-width="1.8" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                            <svg class="arrow-ghost" viewBox="0 0 16 16" fill="none">
+                                <path d="M3 8h10M9 4l4 4-4 4" stroke="white" stroke-width="1.8" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </span>
+                        Selengkapnya
+                    </a>
+                </div>
+            </div>
+            <div class="p-r-2">
+                <a href="" class="p-r-2-card">
+                    <div class="img-container">
+                        <img src="assets/img/upitra4.jpg" alt="">
+                    </div>
+                    <div class="text-container">
+                        <p>Sistem Informasi</p>
+                        <p>Merancang sistem yang membantu organisasi bekerja lebih efisien dan terarah.</p>
+                    </div>
+                    <div class="kaprodi">
+                        <div class="kaprodi-left">
+                            <img src="assets/img/prodi_si 1.png" alt="">
+                            <div>
+                                <p>Mawar Hardiyanti, S.Kom, M.Kom</p>
+                                <p>Ka. Prodi</p>
+                            </div>
+                        </div>
+                        <div class="kaprodi-right">
+                            <img src="assets/img/arrow-sm-right-dark.svg" alt="">
+                        </div>
+                    </div>
+                </a>
+                <a href="" class="p-r-2-card">
+                    <div class="img-container">
+                        <img src="assets/img/upitra2.jpg" alt="">
+                    </div>
+                    <div class="text-container">
+                        <p>Informatika</p>
+                        <p>Mempelajari logika komputasi, AI, dan pengembangan teknologi inovatif.</p>
+                    </div>
+                    <div class="kaprodi">
+                        <div class="kaprodi-left">
+                            <img src="assets/img/prodi_informatika 1.png" alt="">
+                            <div>
+                                <p>Endang Anggiratih, ST, M.Cs</p>
+                                <p>Ka. Prodi</p>
+                            </div>
+                        </div>
+                        <div class="kaprodi-right">
+                            <img src="assets/img/arrow-sm-right-dark.svg" alt="">
+                        </div>
+                    </div>
+                </a>
+                <a href="" class="p-r-2-card">
+                    <div class="img-container">
+                        <img src="assets/img/upitra3.jpg" alt="">
+                    </div>
+                    <div class="text-container">
+                        <p>Software Engineering</p>
+                        <p>Merancang dan membangun perangkat lunak berkualitas tinggi sesuai standar industri.</p>
+                    </div>
+                    <div class="kaprodi">
+                        <div class="kaprodi-left">
+                            <img src="assets/img/prodi_rpl 1.png" alt="">
+                            <div>
+                                <p>Tutus Praningki, S.Kom, M.Kom</p>
+                                <p>Ka. Prodi</p>
+                            </div>
+                        </div>
+                        <div class="kaprodi-right">
+                            <img src="assets/img/arrow-sm-right-dark.svg" alt="">
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <section id="nilai-nilai">
+            <div class="n-n-1">
+                <div class="n-n-1-left">
+                    <div class="img-container">
+                        <img src="assets/img/nilai-kiri-1.png" alt="">
+                    </div>
+                </div>
+                <div class="n-n-1-right">
+                    <div class="img-container">
+                        <img src="assets/img/nilai-kanan-1.png" alt="">
+                    </div>
+                    <div class="img-container">
+                        <img src="assets/img/nilai-kanan-2.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="n-n-2">
+                <div class="rounded">
+                    NILAI NILAI KAMI
+                </div>
+                <h2>
+                    FST Upitra adalah tempat bertumbuh dan berinovasi.
+                </h2>
+                <p>
+                    Kami hadir dengan pendidikan transformatif yang membekali mahasiswa dengan ilmu, karakter, dan
+                    semangat untuk berkontribusi nyata bagi masyarakat.
+                </p>
+                <ul>
+                    <li>
+                        <img src="assets/img/f-1.png" alt="">
+                        Integrity &amp; Ethics
+                    </li>
+                    <li>
+                        <img src="assets/img/f-2.png" alt="">
+                        Excellence
+                    </li>
+                    <li>
+                        <img src="assets/img/f-3.png" alt="">
+                        Compassion
+                    </li>
+                    <li>
+                        <img src="assets/img/f-4.png" alt="">
+                        Humility
+                    </li>
+                </ul>
+                <a href="#pengantar" class="a-button">
+                    <span class="btn-arrow-wrap">
+                        <svg class="arrow-main" viewBox="0 0 16 16" fill="none">
+                            <path d="M3 8h10M9 4l4 4-4 4" stroke="white" stroke-width="1.8" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                        <svg class="arrow-ghost" viewBox="0 0 16 16" fill="none">
+                            <path d="M3 8h10M9 4l4 4-4 4" stroke="white" stroke-width="1.8" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </span>
+                    Selengkapnya
+                </a>
+            </div>
+        </section>
+
+        <section id="testimoni">
+            <div class="t-r-1">
+                <div class="t-left">
+                    <div class="rounded">TESTIMONI</div>
+                    <h2>Apa kata mahasiswa kami yang bahagia.</h2>
+                    <div class="t-arrows">
+                        <button class="t-arrow" onclick="tMove(-1)">&#8592;</button>
+                        <button class="t-arrow t-arrow-filled" onclick="tMove(1)">&#8594;</button>
+                    </div>
+                </div>
+                <div class="t-right">
+                    <div class="t-viewport">
+                        <div class="t-track" id="tTrack">
+                            <div class="t-slide">
+                                <p class="t-title">Pengalaman yang Mengubah Hidup</p>
+                                <p class="t-quote">" Belajar di FST Upitra benar-benar mengubah cara pandang saya.
+                                    Dosen-dosennya sangat suportif dan materi perkuliahannya relevan dengan kebutuhan
+                                    industri. Saya tumbuh tidak hanya secara akademik, tetapi juga secara pribadi berkat
+                                    lingkungan kampus yang inklusif. "</p>
+                                <div class="t-author">
+                                    <div class="t-avatar" style="background:#b07d62;">R</div>
+                                    <div>
+                                        <p class="t-name">Rina Kusuma Dewi</p>
+                                        <p class="t-role">Mahasiswa Sistem Informasi</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="t-slide">
+                                <p class="t-title">Melampaui Ekspektasi</p>
+                                <p class="t-quote">" Program studi Informatika di sini jauh melampaui ekspektasi saya.
+                                    Setiap mata kuliah dirancang dengan matang, dan para dosen benar-benar peduli dengan
+                                    perkembangan mahasiswa. Saya lulus dengan bekal ilmu dan kepercayaan diri yang kuat.
+                                    "</p>
+                                <div class="t-author">
+                                    <div class="t-avatar" style="background:#48498e;">B</div>
+                                    <div>
+                                        <p class="t-name">Bagus Prasetyo</p>
+                                        <p class="t-role">Mahasiswa Informatika</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="t-slide">
+                                <p class="t-title">Komunitas yang Luar Biasa</p>
+                                <p class="t-quote">" Yang membuat FST Upitra istimewa adalah komunitasnya. Koneksi yang
+                                    saya bangun bersama rekan dan dosen sangat berharga. Lebih dari sekadar tempat
+                                    belajar, ini adalah tempat saya benar-benar bertumbuh dan berkembang. "</p>
+                                <div class="t-author">
+                                    <div class="t-avatar" style="background:#4a7c9e;">S</div>
+                                    <div>
+                                        <p class="t-name">Sari Indah Lestari</p>
+                                        <p class="t-role">Mahasiswa Rekayasa Perangkat Lunak</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="f-top">
+            <div class="f-col-1">
+                <div class="f-logo">
+                    <img src="assets/img/logo-footer.png" alt="FST Upitra">
+                </div>
+                <p class="f-tagline">Mendidik generasi yang tidak hanya cerdas, tetapi juga berkarakter dan siap
+                    berkontribusi nyata.</p>
+            </div>
+            <div class="f-col-2">
+                <svg viewBox="0 0 300 500" fill="none" xmlns="http://www.w3.org/2000/svg" class="f-bulb">
+                    <path d="M150 30 C80 30 30 85 30 155 C30 205 60 245 100 270 L100 330 L200 330 L200 270 C240 245 270 205 270 155 C270 85 220 30 150 30 Z" stroke="rgba(0,0,0,0.12)" stroke-width="2" fill="none" />
+                    <path d="M110 330 L110 370 Q110 390 130 390 L170 390 Q190 390 190 370 L190 330" stroke="rgba(0,0,0,0.12)" stroke-width="2" fill="none" />
+                    <line x1="110" y1="350" x2="190" y2="350" stroke="rgba(0,0,0,0.12)" stroke-width="2" />
+                    <line x1="110" y1="370" x2="190" y2="370" stroke="rgba(0,0,0,0.12)" stroke-width="2" />
+                    <path d="M150 80 Q120 120 130 160 Q140 190 150 200 Q160 190 170 160 Q180 120 150 80Z" stroke="rgba(0,0,0,0.1)" stroke-width="1.5" fill="none" />
+                    <path d="M130 160 Q110 180 120 210" stroke="rgba(0,0,0,0.1)" stroke-width="1.5" fill="none" />
+                    <path d="M170 160 Q190 180 180 210" stroke="rgba(0,0,0,0.1)" stroke-width="1.5" fill="none" />
+                </svg>
+            </div>
+            <div class="f-col-3">
+                <p class="f-col-title">Tautan</p>
+                <ul class="f-links">
+                    <li><a href="#">Beranda</a></li>
+                    <li><a href="#">Profil Fakultas</a></li>
+                    <li><a href="#">Program Studi</a></li>
+                    <li><a href="#">Kontak</a></li>
+                    <li><a href="#">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="f-col-4">
+                <p class="f-col-title">Kontak</p>
+                <div class="f-contact-block">
+                    <a href="mailto:admission@upitra.ac.id" class="f-email">admission@upitra.ac.id</a>
+                    <p class="f-contact-sub">Surakarta, Indonesia</p>
+                </div>
+                <div class="f-contact-block">
+                    <a href="tel:+628112907500" class="f-phone">+62 (811) 2907 500</a>
+                    <p class="f-contact-sub">08.00–16.00 WIB, Sen–Jum</p>
+                </div>
+                <div class="f-contact-block">
+                    <p class="f-contact-sub">Jl.Duwet No.1 Karangasem Laweyan Surakarta 57145</p>
+                </div>
+            </div>
+        </div>
+        <div class="f-bottom">
+            <p>&copy; 2026 Fakultas Sains dan Teknologi &mdash; Universitas Pignatelli Triputra</p>
+            <div class="f-socials">
+                <a href="#">IG</a>
+                <a href="#">YT</a>
+                <a href="#">LI</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
