@@ -184,7 +184,7 @@ function initPage() {
     parentMap.forEach(lines => processLines(lines));
 
     const REVEAL_SELECTORS = [
-        'main img',
+        'main img:not(.badge-img):not(.no-reveal)',
         'main .p-r-2-card',
         'main .p-c-1-text-container > div',
         'main .p-c-1-img-container',
@@ -200,7 +200,6 @@ function initPage() {
         'main .t-quote',
         'main .t-author',
         'main .rounded',
-        'main .t-arrows',
         'main #pengantar .p-r-1 .p-c-2 > div:first-child',
     ];
 
@@ -223,7 +222,6 @@ function initPage() {
                 if (el.closest('.t-slide') && !el.classList.contains('t-slide')) return;
                 if (el.closest('.cc-image') && !el.classList.contains('cc-image')) return;
                 if (el.classList.contains('scroll-zoom-img')) return;
-                if (el.classList.contains('badge-logo img')) return;
 
                 seen.add(el);
                 el.classList.add('sr');
