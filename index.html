@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FST Upitra</title>
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
 </head>
 
 <body>
@@ -23,9 +24,9 @@
                     </svg>
                 </span>
                 <div class="nav-dropdown-menu">
-                    <a href="">Sistem Informasi</a>
-                    <a href="">Informatika</a>
-                    <a href="">Rekayasa Perangkat Lunak</a>
+                    <a href="pages/prodi/si.html">Sistem Informasi</a>
+                    <a href="pages/prodi/informatika.html">Informatika</a>
+                    <a href="pages/prodi/rpl.html">Rekayasa Perangkat Lunak</a>
                 </div>
             </li>
             <li>Kontak</li>
@@ -43,7 +44,7 @@
             <img src="assets/img/logo-header.png" alt="" class="mobile-menu-logo">
             <button class="mobile-menu-close" id="mobileMenuClose" aria-label="Close menu">
                 <svg viewBox="0 0 24 24" fill="none" width="20" height="20">
-                    <path d="M6 6l12 12M6 18L18 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    <path d="M6 6l12 12M6 18L18 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
                 </svg>
             </button>
         </div>
@@ -54,7 +55,8 @@
                 <button class="mobile-dropdown-btn" id="mobileDropdownBtn">
                     PROGRAM STUDI
                     <svg viewBox="0 0 16 16" fill="none" width="14" height="14" class="mobile-chevron">
-                        <path d="M4 6l4 4 4-4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M4 6l4 4 4-4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+                            stroke-linejoin="round" />
                     </svg>
                 </button>
                 <ul class="mobile-submenu" id="mobileSubmenu">
@@ -84,7 +86,7 @@
                             <div>
                                 Lulusan kami berkarir di bidang yang sesuai dengan keahlian dan tujuan mereka.
                                 <br>
-                                <a href="#pengantar" class="a-button">
+                                <a href="pages/profil.html" class="a-button">
                                     <span class="btn-arrow-wrap">
                                         <svg class="arrow-main" viewBox="0 0 16 16" fill="none">
                                             <path d="M3 8h10M9 4l4 4-4 4" stroke="white" stroke-width="1.8"
@@ -100,10 +102,18 @@
                             </div>
                         </div>
                         <div class="hero-2">
-                            <div class="marquee">
-                                <div class="track">
-                                    <div class="content">&nbsp;Pendidikan Berkualitas untuk Masa Depan yang Lebih Cerah
-                                    </div>
+                            <div class="marquee" id="marqueeEl">
+                                <div class="track" id="marqueeTrack">
+                                    <span class="marquee-content">&nbsp;Pendidikan Berkualitas untuk Masa Depan yang
+                                        Lebih Cerah &nbsp;&bull;&nbsp; Pendidikan Berkualitas untuk Masa Depan yang
+                                        Lebih Cerah &nbsp;&bull;&nbsp; Pendidikan Berkualitas untuk Masa Depan yang
+                                        Lebih Cerah &nbsp;&bull;&nbsp; Pendidikan Berkualitas untuk Masa Depan yang
+                                        Lebih Cerah &nbsp;&bull;&nbsp;</span>
+                                    <span class="marquee-content" aria-hidden="true">&nbsp;Pendidikan Berkualitas untuk
+                                        Masa Depan yang Lebih Cerah &nbsp;&bull;&nbsp; Pendidikan Berkualitas untuk Masa
+                                        Depan yang Lebih Cerah &nbsp;&bull;&nbsp; Pendidikan Berkualitas untuk Masa
+                                        Depan yang Lebih Cerah &nbsp;&bull;&nbsp; Pendidikan Berkualitas untuk Masa
+                                        Depan yang Lebih Cerah &nbsp;&bull;&nbsp;</span>
                                 </div>
                             </div>
                         </div>
@@ -161,7 +171,7 @@
                     <h2>Kami menyediakan tiga program studi unggulan di bidang sains dan teknologi</h2>
                 </div>
                 <div class="p-r-1-right">
-                    <a href="#pengantar" class="a-button">
+                    <a href="pages/prodi.html" class="a-button">
                         <span class="btn-arrow-wrap">
                             <svg class="arrow-main" viewBox="0 0 16 16" fill="none">
                                 <path d="M3 8h10M9 4l4 4-4 4" stroke="white" stroke-width="1.8" stroke-linecap="round"
@@ -177,9 +187,9 @@
                 </div>
             </div>
             <div class="p-r-2">
-                <a href="" class="p-r-2-card">
+                <a href="pages/prodi/si.html" class="p-r-2-card">
                     <div class="img-container">
-                        <img src="assets/img/upitra4.jpg" alt="">
+                        <img src="assets/img/si.jpg" alt="">
                     </div>
                     <div class="text-container">
                         <p>Sistem Informasi</p>
@@ -194,13 +204,16 @@
                             </div>
                         </div>
                         <div class="kaprodi-right">
-                            <img src="assets/img/arrow-sm-right-dark.svg" alt="">
+                            <svg viewBox="0 0 16 16" fill="none" width="16" height="16">
+                                <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.8"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
                         </div>
                     </div>
                 </a>
-                <a href="" class="p-r-2-card">
+                <a href="pages/prodi/informatika.html" class="p-r-2-card">
                     <div class="img-container">
-                        <img src="assets/img/upitra2.jpg" alt="">
+                        <img src="assets/img/informatika.jpg" alt="">
                     </div>
                     <div class="text-container">
                         <p>Informatika</p>
@@ -215,13 +228,16 @@
                             </div>
                         </div>
                         <div class="kaprodi-right">
-                            <img src="assets/img/arrow-sm-right-dark.svg" alt="">
+                            <svg viewBox="0 0 16 16" fill="none" width="16" height="16">
+                                <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.8"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
                         </div>
                     </div>
                 </a>
-                <a href="" class="p-r-2-card">
+                <a href="pages/prodi/rpl.html" class="p-r-2-card">
                     <div class="img-container">
-                        <img src="assets/img/upitra3.jpg" alt="">
+                        <img src="assets/img/rpl.jpg" alt="">
                     </div>
                     <div class="text-container">
                         <p>Software Engineering</p>
@@ -236,7 +252,10 @@
                             </div>
                         </div>
                         <div class="kaprodi-right">
-                            <img src="assets/img/arrow-sm-right-dark.svg" alt="">
+                            <svg viewBox="0 0 16 16" fill="none" width="16" height="16">
+                                <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.8"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
                         </div>
                     </div>
                 </a>
@@ -363,6 +382,32 @@
                 </div>
             </div>
         </section>
+
+        <section id="contact-card">
+            <div class="cc-inner">
+                <div class="cc-image">
+                    <img src="assets/img/upitra1.jpg" alt="Campus">
+                </div>
+                <div class="cc-content">
+                    <div class="rounded">DAFTAR SEKARANG</div>
+                    <h2>Kampus Upitra adalah tempat yang luar biasa.</h2>
+                    <a href="pages/kontak.html" class="a-button cc-cta">
+                        <span class="btn-arrow-wrap">
+                            <svg class="arrow-main" viewBox="0 0 16 16" fill="none">
+                                <path d="M3 8h10M9 4l4 4-4 4" stroke="white" stroke-width="1.8" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                            <svg class="arrow-ghost" viewBox="0 0 16 16" fill="none">
+                                <path d="M3 8h10M9 4l4 4-4 4" stroke="white" stroke-width="1.8" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </span>
+                        HUBUNGI KAMI
+                    </a>
+                </div>
+            </div>
+        </section>
+
     </main>
 
     <footer>
@@ -376,11 +421,15 @@
             </div>
             <div class="f-col-2">
                 <svg viewBox="0 0 300 500" fill="none" xmlns="http://www.w3.org/2000/svg" class="f-bulb">
-                    <path d="M150 30 C80 30 30 85 30 155 C30 205 60 245 100 270 L100 330 L200 330 L200 270 C240 245 270 205 270 155 C270 85 220 30 150 30 Z" stroke="rgba(0,0,0,0.12)" stroke-width="2" fill="none" />
-                    <path d="M110 330 L110 370 Q110 390 130 390 L170 390 Q190 390 190 370 L190 330" stroke="rgba(0,0,0,0.12)" stroke-width="2" fill="none" />
+                    <path
+                        d="M150 30 C80 30 30 85 30 155 C30 205 60 245 100 270 L100 330 L200 330 L200 270 C240 245 270 205 270 155 C270 85 220 30 150 30 Z"
+                        stroke="rgba(0,0,0,0.12)" stroke-width="2" fill="none" />
+                    <path d="M110 330 L110 370 Q110 390 130 390 L170 390 Q190 390 190 370 L190 330"
+                        stroke="rgba(0,0,0,0.12)" stroke-width="2" fill="none" />
                     <line x1="110" y1="350" x2="190" y2="350" stroke="rgba(0,0,0,0.12)" stroke-width="2" />
                     <line x1="110" y1="370" x2="190" y2="370" stroke="rgba(0,0,0,0.12)" stroke-width="2" />
-                    <path d="M150 80 Q120 120 130 160 Q140 190 150 200 Q160 190 170 160 Q180 120 150 80Z" stroke="rgba(0,0,0,0.1)" stroke-width="1.5" fill="none" />
+                    <path d="M150 80 Q120 120 130 160 Q140 190 150 200 Q160 190 170 160 Q180 120 150 80Z"
+                        stroke="rgba(0,0,0,0.1)" stroke-width="1.5" fill="none" />
                     <path d="M130 160 Q110 180 120 210" stroke="rgba(0,0,0,0.1)" stroke-width="1.5" fill="none" />
                     <path d="M170 160 Q190 180 180 210" stroke="rgba(0,0,0,0.1)" stroke-width="1.5" fill="none" />
                 </svg>
@@ -422,4 +471,5 @@
 
     <script src="assets/js/script.js"></script>
 </body>
+
 </html>

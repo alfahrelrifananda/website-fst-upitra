@@ -1,11 +1,11 @@
 @font-face {
-  font-family: "Inter-Regular";
-  src: url("../font/Inter/static/Inter_18pt-Regular.ttf") format("truetype");
+  font-family: "Poppins-Regular";
+  src: url("../font/Poppins/Poppins-Regular.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: "Inter-SemiBold";
-  src: url("../font/Inter/static/Inter_18pt-SemiBold.ttf") format("truetype");
+  font-family: "Poppins-SemiBold";
+  src: url("../font/Poppins/Poppins-SemiBold.ttf") format("truetype");
 }
 
 :root {}
@@ -17,7 +17,7 @@ html {
 body {
     margin: 0;
     padding: 0;
-    font-family: "Inter-Regular";
+    font-family: "Poppins-Regular";
 }
 
 nav {
@@ -48,6 +48,15 @@ nav ul {
     border: 1px solid white;
     color: white;
     justify-content: space-between;
+}
+
+nav ul li {
+    cursor: pointer;
+}
+
+nav ul li:hover {
+    color: #c8c9ff;
+    transition: background-color 0.25s ease;
 }
 
 nav .kontak {
@@ -91,7 +100,7 @@ nav ul li.nav-dropdown {
     position: absolute;
     top: calc(100% + 16px);
     left: 50%;
-    transform: translateX(-50%) translateY(-8px);
+    transform: translateX(-50%) translateY(8px);
     background: #26287d;
     padding: 8px;
     min-width: 220px;
@@ -251,7 +260,7 @@ nav ul li.nav-dropdown {
     letter-spacing: 0.04em;
     padding: 10px 0;
     cursor: pointer;
-    font-family: "Inter-Regular";
+    font-family: "Poppins-Regular";
 }
 
 .mobile-chevron {
@@ -371,7 +380,7 @@ nav ul li.nav-dropdown {
 }
 
 #jumbotron .bg-jumbotron .bg-layer .content-jumbotron .hero-2 {
-    font-family: "Inter-SemiBold";
+    font-family: "Poppins-SemiBold";
     font-size: 160px;
     line-height: 130px;
     color: white;
@@ -383,19 +392,28 @@ nav ul li.nav-dropdown {
     width: 100vw;
     max-width: 100%;
     height: 200px;
-    overflow-x: hidden;
+    overflow: hidden;     
+    display: flex;
+    align-items: center;
 }
-
+ 
 .track {
-    position: absolute;
+    display: flex;
+    width: max-content;       
     white-space: nowrap;
     will-change: transform;
-    animation: marquee 32s linear infinite;
+    animation: marquee-seamless 120s linear infinite;
+    position: static;         
 }
-
-@keyframes marquee {
+ 
+.marquee-content {
+    display: inline-block;
+    white-space: nowrap;
+}
+ 
+@keyframes marquee-seamless {
     from { transform: translateX(0); }
-    to   { transform: translateX(-50%); }
+    to   { transform: translateX(-50%); }   
 }
 
 #pengantar {
@@ -633,7 +651,7 @@ nav ul li.nav-dropdown {
 
 #prodi .p-r-2 .p-r-2-card .text-container p:nth-child(2) {
     font-size: 20px;
-    --sr-opacity: 0.6;
+    opacity: 0.6;
 }
 
 #prodi .p-r-2 .p-r-2-card .kaprodi {
@@ -665,7 +683,7 @@ nav ul li.nav-dropdown {
 
 #prodi .p-r-2 .p-r-2-card .kaprodi .kaprodi-left div p:nth-child(2) {
     font-size: 14px;
-    --sr-opacity: 0.6;
+    opacity: 0.6;
 }
 
 #prodi .p-r-2 .p-r-2-card .kaprodi .kaprodi-right {
@@ -681,6 +699,27 @@ nav ul li.nav-dropdown {
 #prodi .p-r-2 .p-r-2-card:hover .kaprodi .kaprodi-right {
     background-color: #e5e6ff;
     border: 1px solid #e5e6ff;
+}
+
+#prodi .p-r-2 .p-r-2-card .kaprodi .kaprodi-right {
+    width: 46px;
+    height: 46px;
+    padding: 0;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    border-radius: 50%;
+    margin-left: auto;
+    transition: background 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #111;
+    flex-shrink: 0;
+}
+ 
+#prodi .p-r-2 .p-r-2-card:hover .kaprodi .kaprodi-right {
+    background-color: #26287d;
+    border-color: #26287d;
+    color: white;
 }
 
 #prodi .p-r-2 .p-r-2-card:hover .img-container img {
@@ -955,6 +994,80 @@ nav ul li.nav-dropdown {
     margin-top: 2px;
 }
 
+#contact-card {
+    width: calc(100vw - 60px);
+    padding: 30px;
+    background-color: #f4f0e9;
+}
+ 
+#contact-card .cc-inner {
+    background-color: white;
+    padding: 30px;
+    border-radius: 4px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    overflow: hidden;
+    min-height: 340px;
+}
+ 
+#contact-card .cc-image {
+    height: 100%;
+    min-height: 340px;
+    overflow: hidden;
+}
+ 
+#contact-card .cc-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.5s ease;
+}
+ 
+#contact-card .cc-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    padding: 60px;
+}
+
+
+#contact-card .cc-content h2 {
+    font-size: 36px;
+    line-height: 120%;
+    margin: 0;
+    color: #111;
+}
+ 
+#contact-card .cc-cta {
+    background-color: #26287d;
+    color: white;
+    border: 1px solid #26287d;
+    font-size: 13px;
+    letter-spacing: 0.06em;
+    font-weight: 700;
+}
+ 
+#contact-card .cc-cta .btn-arrow-wrap {
+    background-color: white;
+}
+ 
+#contact-card .cc-cta .btn-arrow-wrap svg path {
+    stroke: #26287d;
+}
+
+#contact-card .rounded {
+    font-size: 14px;
+    border: 1px solid black;
+    width: fit-content;
+    padding: 12px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    border-radius: 30px;
+    --sr-opacity: 0.6;
+}
+
 footer {
     width: calc(100vw - 60px);
     background-color: white;
@@ -1004,7 +1117,7 @@ footer .f-newsletter-form input {
     outline: none;
     padding: 12px 20px;
     font-size: 14px;
-    font-family: "Inter-Regular";
+    font-family: "Poppins-Regular";
     background: transparent;
 }
 
@@ -1016,7 +1129,7 @@ footer .f-newsletter-form button {
     border-radius: 30px;
     font-size: 12px;
     font-weight: 700;
-    font-family: "Inter-SemiBold";
+    font-family: "Poppins-SemiBold";
     cursor: pointer;
     letter-spacing: 0.05em;
     transition: background 0.2s;
@@ -1366,6 +1479,48 @@ footer .f-socials a:hover {
     #testimoni .t-arrows {
         margin-top: 24px;
     }
+    
+    #contact-card {
+        width: calc(100vw - 40px);
+        padding: 20px;
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+ 
+    #contact-card .cc-inner {
+        grid-template-columns: 1fr;
+        min-height: unset;
+        padding: 15px;
+    }
+ 
+    #contact-card .cc-image {
+        min-height: 220px;
+    }
+ 
+    #contact-card .cc-content {
+        padding: 10px 14px;
+        text-align: center;
+        gap: 16px;
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+ 
+    #contact-card .cc-content h2 {
+        font-size: 24px;
+    }
+    
+    #contact-card .cc-content .rounded {
+        margin: 0 auto;
+    }
+    
+    #contact-card .cc-content a {
+        margin: 0 auto;
+    }
+ 
+ 
+    .marquee {
+        height: 100px;
+    }
  
     footer {
         width: calc(100vw - 40px);
@@ -1435,6 +1590,19 @@ footer .f-socials a:hover {
     #nilai-nilai .n-n-2 {
         padding-left: 30px;
         padding-top: 30px;
+    }
+    
+    #contact-card {
+        width: calc(100vw - 60px);
+        padding: 30px;
+    }
+ 
+    #contact-card .cc-content {
+        padding: 40px;
+    }
+ 
+    #contact-card .cc-content h2 {
+        font-size: 28px;
     }
  
     footer .f-top {

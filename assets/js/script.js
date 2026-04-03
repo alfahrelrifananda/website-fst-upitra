@@ -144,6 +144,8 @@ function initReveal() {
             if (el.closest('.p-r-2-card') && !el.classList.contains('p-r-2-card')) return;
             
             if (el.closest('.t-slide') && !el.classList.contains('t-slide')) return;
+            
+            if (el.closest('.cc-image') && !el.classList.contains('cc-image')) return;
 
             seen.add(el);
             el.classList.add('sr');
