@@ -9,14 +9,34 @@
     <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
 </head>
 
-<body>
+<body class="loading">
+
+    <div id="loading-screen">
+        <div class="spinning-badge">
+            <svg class="badge-ring" viewBox="0 0 110 110" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <path id="badge-circle" d="M 55,55 m -38,0 a 38,38 0 1,1 76,0 a 38,38 0 1,1 -76,0" />
+                </defs>
+                <text font-size="10" font-family="Poppins-SemiBold, sans-serif" fill="#26287d" letter-spacing="2.5"
+                    font-weight="600">
+                    <textPath href="#badge-circle">FAKULTAS SAINS & TEKNOLOGI &bull;
+                </text>
+            </svg>
+            <div class="badge-center">
+                <div class="badge-logo">
+                    <img src="assets/img/logo-brand.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
     <nav>
-        <img src="assets/img/logo-header.png" alt="">
+        <a href="index.html"><img src="assets/img/logo-header.png" alt="FST Upitra Logo"></a>
         <ul class="nav-links">
-            <li>Beranda</li>
-            <li>Profil</li>
+            <li><a href="index.html" class="active">Beranda</a></li>
+            <li><a href="pages/profil.html">Profil</a></li>
             <li class="nav-dropdown">
-                Program Studi
+                <a href="pages/prodi.html">Program Studi</a>
                 <span class="nav-chevron">
                     <svg viewBox="0 0 16 16" fill="none">
                         <path d="M4 6l4 4 4-4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
@@ -29,7 +49,7 @@
                     <a href="pages/prodi/rpl.html">Rekayasa Perangkat Lunak</a>
                 </div>
             </li>
-            <li>Kontak</li>
+            <li><a href="pages/kontak.html">Kontak</a></li>
         </ul>
         <a href="tel:+628112907500" class="kontak nav-kontak">+62 (8112 9075 00)</a>
         <button class="nav-hamburger" id="navHamburger" aria-label="Open menu">
@@ -49,8 +69,8 @@
             </button>
         </div>
         <ul class="mobile-menu-links">
-            <li><a href="#">HOME</a></li>
-            <li><a href="#">PROFIL</a></li>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="pages/profil.html">PROFIL</a></li>
             <li class="mobile-dropdown">
                 <button class="mobile-dropdown-btn" id="mobileDropdownBtn">
                     PROGRAM STUDI
@@ -60,12 +80,12 @@
                     </svg>
                 </button>
                 <ul class="mobile-submenu" id="mobileSubmenu">
-                    <li><a href="#">Sistem Informasi</a></li>
-                    <li><a href="#">Informatika</a></li>
-                    <li><a href="#">Rekayasa Perangkat Lunak</a></li>
+                    <li><a href="pages/prodi/si.html">Sistem Informasi</a></li>
+                    <li><a href="pages/prodi/informatika.html">Informatika</a></li>
+                    <li><a href="pages/prodi/rpl.html">Rekayasa Perangkat Lunak</a></li>
                 </ul>
             </li>
-            <li><a href="#">KONTAK</a></li>
+            <li><a href="pages/kontak.html">KONTAK</a></li>
         </ul>
         <a href="tel:+628112907500" class="mobile-menu-kontak">+62 (8112 9075 00)</a>
     </div>
@@ -125,8 +145,8 @@
         <section id="pengantar">
             <div class="p-r-1">
                 <div class="p-c-1">
-                    <div class="p-c-1-img-container">
-                        <img src="assets/img/upitra4.jpg" alt="">
+                    <div class="p-c-1-img-container scroll-zoom-wrap">
+                        <img src="assets/img/upitra4.jpg" alt="" class="scroll-zoom-img">
                     </div>
                     <div class="p-c-1-text-container">
                         <div>
@@ -157,8 +177,8 @@
                         Informatika, Sistem Informasi, dan Rekayasa Perangkat Lunak di bawah naungan Universitas
                         Pignatelli Triputra.
                     </p>
-                    <div class="p-c-2-img-container">
-                        <img src="assets/img/upitra3.jpg" alt="">
+                    <div class="p-c-2-img-container scroll-zoom-wrap">
+                        <img src="assets/img/upitra3.jpg" alt="" class="scroll-zoom-img">
                     </div>
                 </div>
             </div>
@@ -265,16 +285,16 @@
         <section id="nilai-nilai">
             <div class="n-n-1">
                 <div class="n-n-1-left">
-                    <div class="img-container">
-                        <img src="assets/img/nilai-kiri-1.png" alt="">
+                    <div class="img-container scroll-zoom-wrap">
+                        <img src="assets/img/nilai-kiri-1.png" alt="" class="scroll-zoom-img">
                     </div>
                 </div>
                 <div class="n-n-1-right">
-                    <div class="img-container">
-                        <img src="assets/img/nilai-kanan-1.png" alt="">
+                    <div class="img-container scroll-zoom-wrap">
+                        <img src="assets/img/nilai-kanan-1.png" alt="" class="scroll-zoom-img">
                     </div>
-                    <div class="img-container">
-                        <img src="assets/img/nilai-kanan-2.png" alt="">
+                    <div class="img-container scroll-zoom-wrap">
+                        <img src="assets/img/nilai-kanan-2.png" alt="" class="scroll-zoom-img">
                     </div>
                 </div>
             </div>
@@ -385,9 +405,28 @@
 
         <section id="contact-card">
             <div class="cc-inner">
-                <div class="cc-image">
-                    <img src="assets/img/upitra1.jpg" alt="Campus">
+                <div class="cc-image scroll-zoom-wrap">
+                    <img src="assets/img/upitra1.jpg" alt="Campus" class="scroll-zoom-img">
                 </div>
+
+                <div class="spinning-badge">
+                    <svg class="badge-ring" viewBox="0 0 110 110" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <path id="badge-circle" d="M 55,55 m -38,0 a 38,38 0 1,1 76,0 a 38,38 0 1,1 -76,0" />
+                        </defs>
+                        <text font-size="10" font-family="Poppins-SemiBold, sans-serif" fill="#26287d"
+                            letter-spacing="2.5" font-weight="600">
+                            <textPath href="#badge-circle">FAKULTAS SAINS & TEKNOLOGI &bull;
+                        </text>
+                    </svg>
+                    <div class="badge-center">
+                        <div class="badge-logo">
+                            <img src="assets/img/logo-brand.png" alt="">
+                        </div>
+                    </div>
+                </div>
+
+
                 <div class="cc-content">
                     <div class="rounded">DAFTAR SEKARANG</div>
                     <h2>Kampus Upitra adalah tempat yang luar biasa.</h2>
@@ -437,10 +476,10 @@
             <div class="f-col-3">
                 <p class="f-col-title">Tautan</p>
                 <ul class="f-links">
-                    <li><a href="#">Beranda</a></li>
-                    <li><a href="#">Profil Fakultas</a></li>
-                    <li><a href="#">Program Studi</a></li>
-                    <li><a href="#">Kontak</a></li>
+                    <li><a href="index.html">Beranda</a></li>
+                    <li><a href="pages/profil.html">Profil Fakultas</a></li>
+                    <li><a href="pages/prodi.html">Program Studi</a></li>
+                    <li><a href="pages/kontak.html">Kontak</a></li>
                     <li><a href="#">FAQ</a></li>
                 </ul>
             </div>
