@@ -1,0 +1,236 @@
+@import url("global.css");
+
+#kontak-hero {
+    width: 100vw;
+    height: 100vh;
+    min-height: 260px;
+    position: relative;
+    overflow: hidden;
+}
+
+#kontak-hero .kh-bg {
+    position: absolute;
+    inset: 0;
+    background-image: url("../img/upitra1.jpg");
+    background-size: cover;
+    background-position: center 35%;
+}
+
+#kontak-hero .kh-overlay {
+    position: absolute;
+    inset: 0;
+    background: #26277dac;
+}
+
+#kontak-hero .kh-content {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: var(--pad-page);
+    padding-bottom: 52px;
+}
+
+#kontak-hero .kh-eyebrow {
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.6);
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin: 0 0 10px 0;
+}
+
+#kontak-hero h1 {
+    font-size: clamp(42px, 6vw, 74px);
+    color: var(--clr-white);
+    margin: 0;
+    line-height: 1.04;
+    font-family: var(--font-base);
+}
+
+#kontak-main {
+    width: calc(100vw - 60px);
+    padding: var(--pad-page);
+    padding-top: var(--pad-section);
+    padding-bottom: var(--pad-section);
+    background: var(--clr-white);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--pad-page);
+    align-items: start;
+}
+
+#kontak-main .km-img {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    overflow: hidden;
+}
+
+#kontak-main .km-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.6s ease;
+}
+
+#kontak-main .km-img:hover img {
+    transform: scale(1.04);
+}
+
+#kontak-main .km-right {
+    display: flex;
+    flex-direction: column;
+    padding-left: var(--pad-page);
+}
+
+#kontak-main .km-right h2 {
+    font-size: clamp(26px, 2.8vw, 38px);
+    margin: 0 0 36px 0;
+    line-height: 1.2;
+}
+
+#kontak-main .rounded {
+    margin-bottom: 22px;
+}
+
+.k-item {
+    border-top: 1px solid var(--clr-border);
+    padding: 22px 0;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    gap: 16px;
+    text-decoration: none;
+    color: var(--clr-black);
+    transition: opacity var(--transition-base);
+}
+
+.k-item:last-child {
+    border-bottom: 1px solid var(--clr-border);
+}
+
+.k-item:hover {
+    opacity: 0.6;
+}
+
+.k-item-left .k-loc {
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0 0 5px 0;
+}
+
+.k-item-left .k-detail {
+    font-size: 13px;
+    opacity: 0.5;
+    margin: 0 0 2px 0;
+}
+
+.k-arrow {
+    width: 46px;
+    height: 46px;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    color: var(--clr-black);
+    transition: background var(--transition-base), border-color var(--transition-base), color var(--transition-base);
+}
+
+.k-item:hover .k-arrow {
+    background: var(--clr-brand);
+    border-color: var(--clr-brand);
+    color: var(--clr-white);
+}
+
+#kontak-map {
+    padding: var(--pad-page);
+    padding-top: calc(var(--pad-section) + 55px);
+    width: calc(100vw - var(--pad-page) * 2);
+    height: 420px;
+    overflow: visible;
+    position: relative;
+    background: var(--clr-bg-cream);
+}
+
+.kontak-map-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+#kontak-map iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+    display: block;
+    filter: grayscale(0.2) contrast(1.05);
+}
+
+#kontak-map .spinning-badge {
+    position: absolute;
+    left: 50%;
+    top: calc(var(--pad-section) + 55px);
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    display: flex;
+}
+
+#kontak-info {
+    width: calc(100vw - 60px);
+    background: var(--clr-white);
+    padding: var(--pad-page);
+    padding-top: var(--pad-section);
+    border-top: 1px solid var(--clr-border);
+}
+
+.ki-nl-label {
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0 0 16px 0;
+}
+
+@media (max-width: 768px) {
+    #kontak-hero { height: 44vh; min-height: 200px; }
+    #kontak-hero .kh-content { padding: 20px; padding-bottom: 36px; }
+
+    #kontak-main {
+        width: calc(100vw - 40px);
+        padding: 20px;
+        padding-top: 60px;
+        padding-bottom: 60px;
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    #kontak-main .km-right { padding-left: 0; }
+    #kontak-main .km-img { aspect-ratio: 16 / 9; }
+
+    #kontak-map {
+        height: 280px;
+        padding: 20px;
+        padding-top: calc(60px + 40px);
+        width: calc(100vw - 40px);
+        overflow: visible;
+    }
+
+    #kontak-map .spinning-badge {
+        top: calc(60px + 40px);
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 80px;
+        height: 80px;
+        display: flex;
+    }
+
+    #kontak-map .spinning-badge .badge-logo { width: 32px; height: 32px; }
+
+    #kontak-info {
+        width: calc(100vw - 40px);
+        padding: 20px;
+        padding-top: 60px;
+    }
+}
