@@ -11,7 +11,7 @@
 #kontak-hero .kh-bg {
     position: absolute;
     inset: 0;
-    background-image: url("../img/upitra4.jpg");
+    background-image: url("../img/upitra6.jpg");
     background-size: cover;
     background-position: center 35%;
 }
@@ -19,7 +19,7 @@
 #kontak-hero .kh-overlay {
     position: absolute;
     inset: 0;
-    background: #26277dac;
+    background: #07294dc3;
 }
 
 #kontak-hero .kh-content {
