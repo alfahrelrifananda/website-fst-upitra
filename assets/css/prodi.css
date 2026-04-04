@@ -11,7 +11,7 @@
 #prodi-hero .ph-bg {
     position: absolute;
     inset: 0;
-    background-image: url("/assets/img/upitra3.jpg");
+    background-image: url("../img/upitra3.jpg");
     background-size: cover;
     background-position: center 40%;
 }
