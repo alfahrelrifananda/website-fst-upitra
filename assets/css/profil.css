@@ -524,17 +524,18 @@
     }
 
     .ps-text h2 { font-size: 26px; }
-    .ps-text p { font-size: 16px; }
+    .ps-text p { font-size: 16px; --sr-opacity: 0.6; }
     .ps-quote { font-size: 16px; }
 
     .pd-header h2 { font-size: 22px; }
 
     .pv-left h2 { font-size: 26px; }
-    .pv-left p { font-size: 16px; }
-    .pv-item p { font-size: 16px; }
+    
+    .pv-left p { font-size: 16px;  }
+    .pv-item p { font-size: 16px; --sr-opacity: 0.6;}
 
     .pn-left h2 { font-size: 26px; }
-    .pn-left > p { font-size: 16px; }
+    .pn-left > p { font-size: 16px;  --sr-opacity: 0.6; }
     .pn-nilai-item h4 { font-size: 16px; }
-    .pn-nilai-item p { font-size: 14px; }
+    .pn-nilai-item p { font-size: 14px; --sr-opacity: 0.6;}
 }

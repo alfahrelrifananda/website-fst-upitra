@@ -725,7 +725,7 @@
     #contact-card .cc-image { min-height: 220px; }
 
     #contact-card .spinning-badge {
-        top: calc(15px + 220px);
+        top: calc(50px + 220px);
         left: 50%;
         transform: translate(-50%, -50%);
         width: 80px;
