@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Program Studi — FST Upitra</title>
+    <link rel="stylesheet" href="../assets/css/global.css">
+    <link rel="stylesheet" href="../assets/css/index.css">
+    <link rel="stylesheet" href="../assets/css/prodi.css">
+    <link rel="shortcut icon" href="../assets/img/favicon.png" type="image/x-icon">
+</head>
+
+<body class="loading">
+
+    <div id="loading-screen">
+        <div class="spinning-badge">
+            <svg class="badge-ring" viewBox="0 0 110 110" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <path id="badge-circle" d="M 55,55 m -38,0 a 38,38 0 1,1 76,0 a 38,38 0 1,1 -76,0" />
+                </defs>
+                <text font-size="10" font-family="Arial, sans-serif" fill="#26287d" letter-spacing="2.5"
+                    font-weight="600">
+                    <textPath href="#badge-circle">FAKULTAS SAINS & TEKNOLOGI &bull;
+                </text>
+            </svg>
+            <div class="badge-center">
+                <div class="badge-logo">
+                    <img src="../assets/img/logo-brand.png" alt="" class="badge-img">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <nav>
+        <a href="../index.html"><img src="../assets/img/logo-header.png" alt="FST Upitra Logo"></a>
+        <ul class="nav-links">
+            <li><a href="../index.html">Beranda</a></li>
+            <li><a href="profil.html">Profil</a></li>
+            <li class="nav-dropdown">
+                <a href="prodi.html" class="active">Program Studi</a>
+                <span class="nav-chevron">
+                    <svg viewBox="0 0 16 16" fill="none">
+                        <path d="M4 6l4 4 4-4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </span>
+                <div class="nav-dropdown-menu">
+                    <a href="prodi/si.html">Sistem Informasi</a>
+                    <a href="prodi/informatika.html">Informatika</a>
+                    <a href="prodi/rpl.html">Rekayasa Perangkat Lunak</a>
+                </div>
+            </li>
+            <li><a href="kontak.html">Kontak</a></li>
+        </ul>
+        <a href="tel:+628112907500" class="kontak nav-kontak">+62 (8112 9075 00)</a>
+        <button class="nav-hamburger" id="navHamburger" aria-label="Open menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </nav>
+
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="mobile-menu-header">
+            <img src="../assets/img/logo-header.png" alt="" class="mobile-menu-logo">
+            <button class="mobile-menu-close" id="mobileMenuClose" aria-label="Close menu">
+                <svg viewBox="0 0 24 24" fill="none" width="20" height="20">
+                    <path d="M6 6l12 12M6 18L18 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                </svg>
+            </button>
+        </div>
+        <ul class="mobile-menu-links">
+            <li><a href="../index.html">HOME</a></li>
+            <li><a href="profil.html">PROFIL</a></li>
+            <li class="mobile-dropdown">
+                <button class="mobile-dropdown-btn" id="mobileDropdownBtn">
+                    PROGRAM STUDI
+                    <svg viewBox="0 0 16 16" fill="none" width="14" height="14" class="mobile-chevron">
+                        <path d="M4 6l4 4 4-4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </button>
+                <ul class="mobile-submenu" id="mobileSubmenu">
+                    <li><a href="prodi/si.html">Sistem Informasi</a></li>
+                    <li><a href="prodi/informatika.html">Informatika</a></li>
+                    <li><a href="prodi/rpl.html">Rekayasa Perangkat Lunak</a></li>
+                </ul>
+            </li>
+            <li><a href="kontak.html">KONTAK</a></li>
+        </ul>
+        <a href="tel:+628112907500" class="mobile-menu-kontak">+62 (8112 9075 00)</a>
+    </div>
+
+    <div class="mobile-menu-overlay" id="mobileMenuOverlay"></div>
+
+    <main>
+        <section id="prodi-hero">
+            <div class="ph-bg"></div>
+            <div class="ph-overlay"></div>
+            <div class="ph-content">
+                <p class="ph-eyebrow">Program Studi</p>
+                <h1>Pilih Jalur Karirmu</h1>
+            </div>
+        </section>
+
+        <section id="prodi">
+            <div class="rounded">PROGRAM STUDI</div>
+            <div class="p-r-1">
+                <div class="p-r-1-left">
+                    <h2>Kami menyediakan tiga program studi unggulan di bidang sains dan teknologi</h2>
+                </div>
+            </div>
+            <div class="p-r-2">
+                <a href="prodi/si.html" class="p-r-2-card">
+                    <div class="img-container">
+                        <img src="../assets/img/si.jpg" alt="">
+                    </div>
+                    <div class="text-container">
+                        <p>Sistem Informasi</p>
+                        <p>Merancang sistem yang membantu organisasi bekerja lebih efisien dan terarah.</p>
+                    </div>
+                    <div class="kaprodi">
+                        <div class="kaprodi-left">
+                            <img src="../assets/img/prodi_si 1.png" alt="">
+                            <div>
+                                <p>Mawar Hardiyanti, S.Kom, M.Kom</p>
+                                <p>Ka. Prodi</p>
+                            </div>
+                        </div>
+                        <div class="kaprodi-right">
+                            <svg viewBox="0 0 16 16" fill="none" width="16" height="16">
+                                <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.8"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                    </div>
+                </a>
+                <a href="prodi/informatika.html" class="p-r-2-card">
+                    <div class="img-container">
+                        <img src="../assets/img/informatika.jpg" alt="">
+                    </div>
+                    <div class="text-container">
+                        <p>Informatika</p>
+                        <p>Mempelajari logika komputasi, AI, dan pengembangan teknologi inovatif.</p>
+                    </div>
+                    <div class="kaprodi">
+                        <div class="kaprodi-left">
+                            <img src="../assets/img/prodi_informatika 1.png" alt="">
+                            <div>
+                                <p>Endang Anggiratih, ST, M.Cs</p>
+                                <p>Ka. Prodi</p>
+                            </div>
+                        </div>
+                        <div class="kaprodi-right">
+                            <svg viewBox="0 0 16 16" fill="none" width="16" height="16">
+                                <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.8"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                    </div>
+                </a>
+                <a href="prodi/rpl.html" class="p-r-2-card">
+                    <div class="img-container">
+                        <img src="../assets/img/rpl.jpg" alt="">
+                    </div>
+                    <div class="text-container">
+                        <p>Software Engineering</p>
+                        <p>Merancang dan membangun perangkat lunak berkualitas tinggi sesuai standar industri.</p>
+                    </div>
+                    <div class="kaprodi">
+                        <div class="kaprodi-left">
+                            <img src="../assets/img/prodi_rpl 1.png" alt="">
+                            <div>
+                                <p>Tutus Praningki, S.Kom, M.Kom</p>
+                                <p>Ka. Prodi</p>
+                            </div>
+                        </div>
+                        <div class="kaprodi-right">
+                            <svg viewBox="0 0 16 16" fill="none" width="16" height="16">
+                                <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.8"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="f-top">
+            <div class="f-col-1">
+                <div class="f-logo">
+                    <img src="../assets/img/logo-footer.png" alt="FST Upitra">
+                </div>
+                <p class="f-tagline">Mendidik generasi yang tidak hanya cerdas, tetapi juga berkarakter dan siap
+                    berkontribusi nyata.</p>
+            </div>
+            <div class="f-col-2">
+                <svg viewBox="0 0 300 500" fill="none" xmlns="http://www.w3.org/2000/svg" class="f-bulb">
+                    <path
+                        d="M150 30 C80 30 30 85 30 155 C30 205 60 245 100 270 L100 330 L200 330 L200 270 C240 245 270 205 270 155 C270 85 220 30 150 30 Z"
+                        stroke="rgba(0,0,0,0.12)" stroke-width="2" fill="none" />
+                    <path d="M110 330 L110 370 Q110 390 130 390 L170 390 Q190 390 190 370 L190 330"
+                        stroke="rgba(0,0,0,0.12)" stroke-width="2" fill="none" />
+                    <line x1="110" y1="350" x2="190" y2="350" stroke="rgba(0,0,0,0.12)" stroke-width="2" />
+                    <line x1="110" y1="370" x2="190" y2="370" stroke="rgba(0,0,0,0.12)" stroke-width="2" />
+                    <path d="M150 80 Q120 120 130 160 Q140 190 150 200 Q160 190 170 160 Q180 120 150 80Z"
+                        stroke="rgba(0,0,0,0.1)" stroke-width="1.5" fill="none" />
+                    <path d="M130 160 Q110 180 120 210" stroke="rgba(0,0,0,0.1)" stroke-width="1.5" fill="none" />
+                    <path d="M170 160 Q190 180 180 210" stroke="rgba(0,0,0,0.1)" stroke-width="1.5" fill="none" />
+                </svg>
+            </div>
+            <div class="f-col-3">
+                <p class="f-col-title">Tautan</p>
+                <ul class="f-links">
+                    <li><a href="../index.html">Beranda</a></li>
+                    <li><a href="profil.html">Profil Fakultas</a></li>
+                    <li><a href="prodi.html">Program Studi</a></li>
+                    <li><a href="kontak.html">Kontak</a></li>
+                </ul>
+            </div>
+            <div class="f-col-4">
+                <p class="f-col-title">Kontak</p>
+                <div class="f-contact-block">
+                    <a href="mailto:admission@upitra.ac.id" class="f-email">admission@upitra.ac.id</a>
+                    <p class="f-contact-sub">Surakarta, Indonesia</p>
+                </div>
+                <div class="f-contact-block">
+                    <a href="tel:+628112907500" class="f-phone">+62 (811) 2907 500</a>
+                    <p class="f-contact-sub">08.00–16.00 WIB, Sen–Jum</p>
+                </div>
+                <div class="f-contact-block">
+                    <p class="f-contact-sub">Jl.Duwet No.1 Karangasem Laweyan Surakarta 57145</p>
+                </div>
+            </div>
+        </div>
+        <div class="f-bottom">
+            <p>&copy; 2026 Fakultas Sains dan Teknologi &mdash; Universitas Pignatelli Triputra</p>
+            <div class="f-socials">
+                <a href="#">IG</a>
+                <a href="#">YT</a>
+                <a href="#">LI</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../assets/js/script.js"></script>
+</body>
+
+</html>

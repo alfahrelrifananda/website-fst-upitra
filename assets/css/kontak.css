@@ -94,9 +94,6 @@
     margin-bottom: 22px;
 }
 
-.k-list {
-    border-top: 1px solid var(--clr-border);
-}
 
 .k-item {
     padding: 22px 0;
@@ -108,10 +105,6 @@
     color: var(--clr-black);
     transition: opacity var(--transition-base);
     border-bottom: 1px solid var(--clr-border);
-}
-
-.k-item:hover {
-    opacity: 0.6;
 }
 
 .k-item-left .k-loc {
@@ -153,6 +146,7 @@
     overflow: visible;
     position: relative;
     background: var(--clr-bg-cream);
+    padding-bottom: calc(var(--pad-section) + 55px);
 }
 
 .kontak-map-inner {
@@ -179,7 +173,7 @@
     display: flex;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
     #kontak-hero {
         height: 44vh;
         min-height: 200px;

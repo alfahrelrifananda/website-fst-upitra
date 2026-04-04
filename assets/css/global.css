@@ -10,7 +10,7 @@
 
 :root {
     --clr-brand:        #26287d;
-    --clr-brand-light:  #c8c9ff;
+    --clr-brand-light:  #b6b6b6;
     --clr-bg-cream:     #f4f0e9;
     --clr-white:        #ffffff;
     --clr-black:        #111111;
@@ -686,12 +686,12 @@ footer .f-socials a:hover {
     opacity: 1;
 }
 
-@media (min-width: 769px) and (max-width: 1024px) {
+@media (min-width: 1001px) and (max-width: 1024px) {
     footer .f-top { grid-template-columns: 1fr 1fr; }
     footer .f-col-2 { display: none; }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
     nav {
         padding: 16px 20px;
         width: calc(100% - 40px);

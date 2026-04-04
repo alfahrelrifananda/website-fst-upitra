@@ -1,7 +1,7 @@
 @import url("global.css");
 
 #jumbotron {
-    width: 100vw;
+    width: 100%;
     height: 140vh;
 }
 
@@ -60,9 +60,10 @@
     margin-top: 5%;
 }
 
+/* ── Marquee ── */
 .marquee {
     position: relative;
-    width: 100vw;
+    width: 100%;
     max-width: 100%;
     height: 200px;
     overflow: hidden;
@@ -88,8 +89,10 @@
     to   { transform: translateX(-50%); }
 }
 
+/* ── Pengantar ── */
 #pengantar {
-    width: calc(100vw - 60px);
+    width: 100%;
+    box-sizing: border-box;
     height: fit-content;
     background-color: var(--clr-brand);
     padding: var(--pad-page);
@@ -159,8 +162,10 @@
     height: 100vh;
 }
 
+/* ── Prodi ── */
 #prodi {
-    width: calc(100vw - 60px);
+    width: 100%;
+    box-sizing: border-box;
     height: fit-content;
     padding: var(--pad-page);
     background-color: var(--clr-bg-cream);
@@ -286,8 +291,10 @@
     color: var(--clr-white);
 }
 
+/* ── Nilai-nilai ── */
 #nilai-nilai {
-    width: 100vw;
+    width: 100%;
+    box-sizing: border-box;
     height: fit-content;
     background-color: var(--clr-white);
     display: grid;
@@ -390,8 +397,10 @@
     margin-top: var(--pad-page);
 }
 
+/* ── Testimoni ── */
 #testimoni {
-    width: calc(100vw - 60px);
+    width: 100%;
+    box-sizing: border-box;
     height: fit-content;
     background-color: var(--clr-bg-cream);
     padding: var(--pad-page);
@@ -514,8 +523,10 @@
 #testimoni .t-name { font-weight: 600; font-size: 16px; color: var(--clr-black); margin: 0; }
 #testimoni .t-role { font-size: 14px; --sr-opacity: 0.6; margin: 0; margin-top: 2px; }
 
+/* ── Contact card ── */
 #contact-card {
-    width: calc(100vw - 60px);
+    width: 100%;
+    box-sizing: border-box;
     padding: var(--pad-page);
     background-color: var(--clr-bg-cream);
 }
@@ -585,7 +596,7 @@
     transform: translate(-50%, -50%);
 }
 
-@media (min-width: 769px) and (max-width: 1024px) {
+@media (min-width: 1001px) and (max-width: 1024px) {
     #jumbotron .bg-jumbotron .bg-layer .content-jumbotron .hero-1 div:nth-child(1) { font-size: 48px; }
     #jumbotron .bg-jumbotron .bg-layer .content-jumbotron .hero-2 { font-size: 110px; line-height: 90px; }
 
@@ -603,7 +614,7 @@
     #contact-card .cc-content h2 { font-size: 28px; }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
     #jumbotron { height: 100svh; }
 
     #jumbotron .bg-jumbotron .bg-layer .content-jumbotron {
@@ -628,7 +639,6 @@
     .marquee { height: 100px; }
 
     #pengantar {
-        width: calc(100vw - 40px);
         padding: 20px;
         padding-top: 60px;
         padding-bottom: 60px;
@@ -646,7 +656,6 @@
     #pengantar .p-r-1 .p-c-2 .p-c-2-img-container { height: 60vw; }
 
     #prodi {
-        width: calc(100vw - 40px);
         padding: 20px;
         padding-top: 60px;
         padding-bottom: 60px;
@@ -688,7 +697,6 @@
     #nilai-nilai .n-n-2 li { font-size: 16px; }
 
     #testimoni {
-        width: calc(100vw - 40px);
         padding: 20px;
         padding-top: 60px;
         padding-bottom: 60px;
@@ -709,7 +717,6 @@
     #testimoni .t-arrows { margin-top: 24px; }
 
     #contact-card {
-        width: calc(100vw - 40px);
         padding: 20px;
         padding-top: 40px;
         padding-bottom: 40px;
