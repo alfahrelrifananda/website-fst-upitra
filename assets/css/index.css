@@ -615,6 +615,8 @@
 
 @media (max-width: 1000px) {
     #jumbotron { height: 75svh; }
+    
+    
 
     #jumbotron .bg-jumbotron .bg-layer .content-jumbotron {
         display: flex;
@@ -698,7 +700,6 @@
     #testimoni {
         padding: 20px;
         padding-top: 60px;
-        padding-bottom: 60px;
     }
 
     #testimoni .t-r-1 { grid-template-columns: 1fr; gap: 40px; }
@@ -714,6 +715,10 @@
     #testimoni .t-right { padding-left: 0; }
     #testimoni .t-quote { font-size: 16px; }
     #testimoni .t-arrows { margin-top: 24px; }
+    
+#testimoni .t-slide {
+    min-height: 300px;
+}
 
     #contact-card {
         padding: 20px;

@@ -10,7 +10,7 @@
 
 :root {
     --clr-brand:        #07294d;
-    --clr-brand-light:  #ffffff7a;
+    --clr-brand-light:  #ffc600;
     --clr-bg-cream:     #f4f0e9;
     --clr-white:        #ffffff;
     --clr-black:        #111111;
@@ -273,7 +273,7 @@ nav ul li.nav-dropdown:hover .nav-dropdown-menu {
     position: fixed;
     top: 16px;
     left: 16px;
-    width: 335px;
+    width: calc(90vw - 32px);
     background: var(--clr-brand);
     z-index: 1000;
     padding: 20px;
@@ -302,6 +302,7 @@ nav ul li.nav-dropdown:hover .nav-dropdown-menu {
 
 .mobile-menu-close {
     height: 32px;
+    margin-left: auto;
     border-radius: 50%;
     background: transparent;
     border: none;
